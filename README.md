@@ -20,7 +20,7 @@ IEEE International Conference on Robotics and Automation (**ICRA**), 2026.
 
 ## Experience
 
-- Algorithm Engineer (Intern), Shanghai Artificial Intelligence Laboratory · 2026.07 - Present
+- Algorithm Engineer (Intern), Shanghai AI Laboratory · 2026.07 - Present
 - Algorithm Engineer (Intern), JD Explore Academy · 2025.11 - 2026.05
 
 ## Awards

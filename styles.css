@@ -1,0 +1,156 @@
+:root {
+  --heading: rgb(178, 34, 34);
+  --link: rgb(0, 0, 255);
+  --rule: #aaaaaa;
+  --shadow: #122b6d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: Roboto, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  transform: translateY(-120%);
+  background: #111;
+  color: #fff;
+  padding: 0.4rem 0.7rem;
+}
+
+.skip:focus {
+  transform: none;
+}
+
+.container {
+  width: min(980px, calc(100% - 28px));
+  margin: 28px auto 32px;
+  padding: 18px 28px 22px;
+  background: #fff;
+  box-shadow: 0 0 7px var(--shadow);
+}
+
+h1 {
+  margin: 0.4rem 0 0.85rem;
+  color: #111;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.2;
+  border: 0;
+}
+
+h2 {
+  margin: 1.35rem 0 0.55rem;
+  padding: 0.35rem 0 0.28rem;
+  color: var(--heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  border-bottom: 1px solid var(--rule);
+}
+
+p {
+  margin: 0.35rem 0 0.7rem;
+}
+
+ul {
+  margin: 0.2rem 0 0.8rem;
+  padding-left: 1.4rem;
+}
+
+li {
+  margin: 0.18rem 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px dotted #777;
+}
+
+.links {
+  margin: 0.2rem 0 0.4rem;
+}
+
+.links a {
+  color: #222;
+  border-bottom: 0;
+}
+
+.links a:hover {
+  color: var(--link);
+  border-bottom: 0;
+}
+
+.note {
+  margin: 0.15rem 0 0;
+}
+
+.pub-title {
+  margin: 0.85rem 0 0.15rem;
+  font-weight: 700;
+}
+
+.pub-meta {
+  margin: 0 0 0.4rem;
+}
+
+.experience {
+  list-style: disc;
+  padding-left: 1.4rem;
+}
+
+.experience li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: baseline;
+}
+
+.date {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+a:focus-visible,
+.skip:focus {
+  outline: 2px solid var(--heading);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(980px, calc(100% - 16px));
+    margin-top: 12px;
+    padding: 14px 16px 18px;
+  }
+
+  .experience li {
+    flex-direction: column;
+    gap: 0.05rem;
+  }
+}
